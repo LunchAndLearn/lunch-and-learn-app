@@ -16,7 +16,7 @@ module.exports = StyleSheet.create(
       iconWrap: {
         paddingHorizontal: 7,
         alignItems: "center",
-        justifyContent: "center",
+        justifyContent: "center"
       }
     }
 )
