@@ -15,6 +15,6 @@ module.exports = StyleSheet.create({
     },
     signupLinkText: {
         color: "#000",
-        marginLeft: 5,
+        marginLeft: 5
     }
 })

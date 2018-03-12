@@ -13,6 +13,6 @@ module.exports = StyleSheet.create({
     },
     buttonText: {
       color: "#FFF",
-      fontSize: 18,
+      fontSize: 18
     }
 })

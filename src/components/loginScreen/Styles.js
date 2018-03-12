@@ -14,6 +14,6 @@ module.exports = StyleSheet.create({
         flex: 1,
     },
     wrapper: {
-        paddingVertical: 30,
+        paddingVertical: 30
     }
 })
