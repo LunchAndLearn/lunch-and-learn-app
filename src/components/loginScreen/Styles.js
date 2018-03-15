@@ -4,6 +4,9 @@ module.exports = StyleSheet.create({
     container: {
         flex: 1,
     },
+    title: {
+        textAlign: 'center'
+    },
     markWrap: {
         flex: 1,
         paddingVertical: 30,
