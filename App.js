@@ -1,6 +1,6 @@
 import React from 'react';
 import { Constants } from 'expo';
-import { StyleSheet, Text, View, StatusBar, ImageBackground } from 'react-native';
+import { StyleSheet, View, StatusBar } from 'react-native';
 import LoginScreen from './src/components/loginScreen/LoginScreen.js';
 
 export default class App extends React.Component {
@@ -19,9 +19,5 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  backgroundImage: {
-    flex: 1,
-    resizeMode: 'center',
-  },
+  }
 });
