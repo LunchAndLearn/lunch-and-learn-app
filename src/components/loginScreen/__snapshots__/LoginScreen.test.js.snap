@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoginScreen> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "paddingVertical": 30,
+      }
+    }
+  >
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../src/components/loginScreen/logo.jpg",
+        }
+      }
+      style={
+        Object {
+          "flex": 1,
+          "height": null,
+          "width": null,
+        }
+      }
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      Lunch & Learn
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "paddingVertical": 30,
+      }
+    }
+  >
+    <LoginTextInput
+      changeText={[Function]}
+      iconName="ios-person"
+      isSecure={false}
+      placeholder="Usuário"
+      value=""
+    />
+    <LoginTextInput
+      changeText={[Function]}
+      iconName="ios-lock"
+      isSecure={true}
+      placeholder="Senha"
+      value=""
+    />
+    <LoginButton
+      onPressButton={[Function]}
+    />
+  </View>
+  <NewAccount />
+</View>
+`;
