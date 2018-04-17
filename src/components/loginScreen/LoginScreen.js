@@ -4,7 +4,6 @@ import NewAccount from '../newAccount/NewAccount.js';
 import LoginButton from '../loginButton/LoginButton.js';
 import Styles from './Styles.js';
 import LoginTextInput from '../loginTextInput/LoginTextInput.js';
-
 const mark = require("./logo.jpg");
 
 export default class LoginScreen extends Component {
@@ -15,10 +14,11 @@ export default class LoginScreen extends Component {
       username: '',
       password: ''
     }
+    this.login = this.login.bind(this);
   }
 
-  login = () => {
-
+  login() {
+    console.log('called');
   }
 
   handleTextChange = (value, key) => {
