@@ -4,9 +4,9 @@ import Styles from './Styles.js';
 
 const LoginButton = ({ onPressButton }) => (
     <View>
-        <TouchableOpacity activeOpacity={.5}>
+        <TouchableOpacity activeOpacity={.5} onPress={onPressButton}>
             <View style={Styles.button}>
-                <Text style={Styles.buttonText} onPress={onPressButton}>Logar</Text>   
+                <Text style={Styles.buttonText}>Logar</Text>   
             </View>
         </TouchableOpacity>
     </View>
