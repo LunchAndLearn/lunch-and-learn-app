@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 module.exports = StyleSheet.create(
     {
-    inputPasswordWrap: {
+    inputWrap: {
         flexDirection: "row",
         marginVertical: 10,
         height: 40,
@@ -16,7 +16,7 @@ module.exports = StyleSheet.create(
       iconWrap: {
         paddingHorizontal: 7,
         alignItems: "center",
-        justifyContent: "center",
-      },
+        justifyContent: "center"
+      }
     }
 )
