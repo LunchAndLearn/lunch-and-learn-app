@@ -20,7 +20,7 @@
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
     "test:unit": "jest",
-    "test": "jest"
+    "test": "jest --env=jsdom"
   },
   "jest": {
     "preset": "react-native",
