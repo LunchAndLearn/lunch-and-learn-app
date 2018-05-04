@@ -3,7 +3,8 @@ import { View, Image, Text } from 'react-native';
 import NewAccount from '../newAccount/NewAccount.js';
 import LoginButton from '../loginButton/LoginButton.js';
 import Styles from './Styles.js';
-import LoginTextInput from '../loginTextInput/LoginTextInput.js';
+import LoginTextInput from '../loginTextInput/LoginTextInput';
+import { PlainTextConversionStream } from 'parse5';
 const mark = require("./logo.jpg");
 
 export default class LoginScreen extends Component {
@@ -13,12 +14,18 @@ export default class LoginScreen extends Component {
     this.state = {
       username: '',
       password: ''
+      // errorMessage
     }
     this.login = this.login.bind(this);
   }
 
   login() {
-    console.log('called');
+    const { username, password } = this.state;
+    if (!username.trim().length || !password.trim().length){
+      console.log('aaaaaaaa');
+      this.setState({ errorMessage: "Preencha os campos obrigatórios" } );
+      return;
+    }
   }
 
   handleTextChange = (value, key) => {
@@ -28,7 +35,7 @@ export default class LoginScreen extends Component {
   }
 
   render() {
-    const { username, password } = this.state;
+    const { username, password, errorMessage } = this.state;
     return (
       <View style={Styles.container}>
           <View style={Styles.markWrap}>
@@ -51,6 +58,10 @@ export default class LoginScreen extends Component {
               value={password}
               changeText={(value) => this.handleTextChange(value, 'password')} 
             />
+
+            {errorMessage && 
+              <Text id="error-message">{errorMessage}</Text>
+            }
             <LoginButton onPressButton={this.login}/>
           </View>
           <NewAccount />
